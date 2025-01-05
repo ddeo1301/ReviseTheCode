@@ -41,7 +41,7 @@ DYNAMIC PROGRAMMING
 
 
 
-class Solution {
+  class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
         int n = s.length();
         FenwickTree fenwickTree = new FenwickTree(n);
@@ -113,7 +113,7 @@ class SegmentTree {
 }
 
 
-class Solution {
+  class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
         int n = s.length();
         SegmentTree segmentTree = new SegmentTree(n);
