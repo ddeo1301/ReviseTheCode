@@ -2,9 +2,8 @@ DYNAMIC PROGRAMMING
   1) Leetcode 494 - Target SUm
   2) Leetcode 2381
 
-     The Fenwick Tree will efficiently handle range updates (shifts) and prefix sum queries.
 
-     class FenwickTree {
+class FenwickTree {
     private int[] fenwickTree;
     private int size;
 
@@ -39,9 +38,7 @@ DYNAMIC PROGRAMMING
     }
 }
 
-
-
-  class Solution {
+class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
         int n = s.length();
         FenwickTree fenwickTree = new FenwickTree(n);
@@ -68,7 +65,6 @@ DYNAMIC PROGRAMMING
 
 
 
-The Segment Tree will efficiently handle range updates and point queries. Here's the implementation:
 
 class SegmentTree {
     private int[] tree;
@@ -112,8 +108,7 @@ class SegmentTree {
     }
 }
 
-
-  class Solution {
+class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
         int n = s.length();
         SegmentTree segmentTree = new SegmentTree(n);
@@ -139,3 +134,6 @@ class SegmentTree {
 }
 
 
+
+Segment Tree will efficiently handle range updates and point queries
+Fenwick Tree will efficiently handle range updates (shifts) and prefix sum queries
