@@ -39,6 +39,8 @@ DYNAMIC PROGRAMMING
     }
 }
 
+
+
 class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
         int n = s.length();
@@ -109,6 +111,7 @@ class SegmentTree {
         }
     }
 }
+
 
 class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
